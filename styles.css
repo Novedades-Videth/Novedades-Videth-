@@ -1,55 +1,105 @@
+/* ------------------------------
+   ESTILO BASE KAWAII MODERNO KA2
+--------------------------------*/
+
 body {
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
-    background: #fff1f5;
-    color: #444;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #ffd6f7, #d8c4ff);
+    background-attachment: fixed;
+    color: #4a3556;
 }
 
-header {
-    text-align: center;
-    background: #ffdee9;
-    padding: 20px;
-    border-bottom: 2px solid #ffbcd4;
-}
-
-h1 {
-    margin: 0;
-    color: #d1497a;
-}
-
-.tagline {
-    font-size: 14px;
-    color: #666;
-}
-
-.hero img {
+/* Brillitos suaves */
+body::before {
+    content: "";
+    position: fixed;
     width: 100%;
-    border-radius: 12px;
+    height: 100%;
+    pointer-events: none;
+    background-image: url('https://i.imgur.com/VkPNX8k.png');
+    background-size: 300px;
+    opacity: 0.35;
+    z-index: 0;
 }
 
-.grid {
-    display: grid;
-    gap: 16px;
+/* Contenedor general */
+.container {
     padding: 20px;
+    position: relative;
+    z-index: 2;
 }
 
-.producto {
-    background: white;
-    padding: 12px;
-    border-radius: 14px;
-    text-align: center;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+/* Títulos */
+h1, h2, h3 {
+    color: #ff66c4;
+    text-shadow: 0 0 10px rgba(255, 102, 196, 0.4);
 }
 
-.producto img {
+/* Tarjetas de productos */
+.product-card {
+    background: #ffffffcc;
+    border-radius: 18px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.25);
+    border: 2px dashed #ffb6ea;
+}
+
+/* Imagen del producto */
+.product-card img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
+    border: 2px solid #ffb6ea;
 }
 
+/* Botón kawaii rosita */
+.btn-kawaii {
+    background: #ff66c4;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(255, 66, 165, 0.4);
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+}
+
+/* Botón kawaii hover */
+.btn-kawaii:hover {
+    background: #ff2fab;
+}
+
+/* BOTÓN FLOTANTE WHATSAPP */
+.whatsapp-float {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    background: #25D366;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 9999;
+}
+
+.whatsapp-float img {
+    width: 38px;
+}
+
+/* Footer kawaii */
 footer {
+    margin-top: 40px;
+    padding: 25px;
+    background: #ffffffaa;
+    border-top: 3px dashed #ffb2e6;
     text-align: center;
-    padding: 20px;
-    font-size: 13px;
-    color: #888;
+    border-radius: 20px 20px 0 0;
 }
