@@ -1,7 +1,7 @@
 {
   "name": "Novedades Videth",
   "short_name": "Videth",
-  "start_url": "/Novedades-Videth-/",
+  "start_url": "/Novedades-Videth-/index.html",
   "scope": "/Novedades-Videth-/",
   "display": "standalone",
   "background_color": "#ffffff",
