@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Maquillaje Profesional - Novedades Videth</title>
+  <link rel="stylesheet" href="../estilos.css" />
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<!-- WhatsApp flotante kawaii -->
+<a class="whatsapp-float" href="https://wa.me/525571456222?text=Hola%20quiero%20agendar%20maquillaje" target="_blank" aria-label="WhatsApp">
+  <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20.52 3.48A11.93 11.93 0 0012 .02C6.49.02 1.98 4.53 1.98 10.04c0 1.77.46 3.5 1.35 5.03L.27 23.23l8.63-2.28a10.96 10.96 0 004.83 1.02c5.51 0 10.02-4.51 10.02-10.02 0-2.67-1.04-5.18-2.96-7.47z" fill="#FF6FCF"/>
+    <path d="M17.5 14.1c-.28-.14-1.66-.8-1.92-.89-.26-.09-.46-.14-.66.14-.21.28-.82.89-1.01 1.07-.18.18-.36.21-.64.07-.28-.14-1.18-.43-2.25-1.39-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.13-.13.28-.36.42-.54.14-.18.19-.31.28-.51.09-.2 0-.37-.05-.51-.05-.14-.66-1.58-.91-2.18-.24-.57-.48-.49-.66-.5-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.29-1.02 1-1.02 2.44 0 1.44 1.05 2.83 1.19 3.03.14.2 2.06 3.3 5.02 4.62 2.96 1.33 2.96.89 3.5.83.54-.06 1.76-.72 2.01-1.41.25-.69.25-1.28.18-1.41-.07-.13-.26-.2-.54-.34z" fill="#fff"/>
+  </svg>
+</a>
+
+<body>
+  <a class="btn" href="../index.html">⬅ Regresar</a>
+
+  <h1>Maquillaje Profesional</h1>
+  <p class="tagline" style="text-align:center;color:#666;margin-top:-12px;">
+    Eventos sociales, sesiones y ocasiones especiales
+  </p>
+
+  <!-- Botones principales -->
+  <div style="display:flex;gap:12px;justify-content:center;margin-top:14px;">
+    <a class="btn-whatsapp" href="https://wa.me/525571456222?text=Hola%20quiero%20agendar%20maquillaje" target="_blank">
+      WhatsApp
+    </a>
+
+    <a class="btn-pedido" href="mailto:contacto@novedadesvideth.com?subject=Cotización%20Maquillaje&body=Hola%2C%20quiero%20información%20del%20maquillaje.">
+      Solicitar cotización
+    </a>
+  </div>
+
+  <!-- Información del servicio -->
+  <div class="info-box" style="margin-top:24px;">
+    <h2>💄 Maquillaje Profesional para Eventos y Social</h2>
+
+    <p>
+      Servicio premium ideal para bodas, XV años, graduaciones, eventos sociales y sesiones fotográficas.
+      Utilizamos productos profesionales de larga duración y técnicas especializadas.
+    </p>
+
+    <h3>✨ Este servicio incluye:</h3>
+    <ul>
+      <li>✔ Maquillaje profesional completo (día o noche)</li>
+      <li>✔ Preparación de piel</li>
+      <li>✔ Diseño personalizado según tu estilo</li>
+      <li>✔ Productos profesionales de alta duración</li>
+      <li>🌟 <strong>Prueba de maquillaje previa incluida</strong></li>
+    </ul>
+
+    <h3>📅 Apartado especial para este servicio</h3>
+
+    <div class="apartado-banner">
+      ✔ Para este servicio es necesario agendar cita previa  
+      ✔ Envíanos la siguiente información:  
+      • Día del evento  
+      • Hora en que necesitas el servicio  
+      • Lugar donde se realizará  
+      • Cantidad de personas a maquillar  
+      ✔ Con esto te enviamos la cotización exacta  
+      ✔ Te indicamos el monto requerido para apartar  
+    </div>
+
+    <h3>📲 Agenda tu cita</h3>
+    <p>Haz clic para enviarme mensaje por WhatsApp:</p>
+
+    <a class="whatsapp-btn" href="https://wa.me/525571456222?text=Hola%20quiero%20agendar%20maquillaje" target="_blank">
+      Agendar Maquillaje
+    </a>
+
+    <h3>📦 Información adicional</h3>
+    <ul>
+      <li>🚚 Servicio a domicilio disponible según zona</li>
+      <li>🕒 Revisar disponibilidad antes de apartar</li>
+      <li>💬 Atención personalizada</li>
+    </ul>
+  </div>
+
+  <script src="../script.js"></script>
+
+</body>
+</html>
