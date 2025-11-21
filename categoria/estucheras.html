@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Estucheras - Novedades Videth</title>
 
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="../manifest.json">
   <link rel="stylesheet" href="../estilos.css" />
+  <script src="../script.js" defer></script>
 </head>
 
 <body>
@@ -16,8 +17,7 @@
      href="https://wa.me/52557145622?text=Hola%20me%20interesa%20este%20producto."
      target="_blank"
      aria-label="WhatsApp">
-    <svg width="36" height="36" viewBox="0 0 24 24" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
       <path d="M20.52 3.48A11.93 11.93 0 0012 .02C6.49.02 1.98 4.53 1.98 10.04c0 1.77.46 3.5 1.35 5.03L.27 23.23l8.63-2.28a10.96 10.96 0 004.83 1.02c5.51 0 10.02-4.51 10.02-10.02 0-2.67-1.04-5.18-2.96-7.47z"
         fill="#FF6FCF" />
       <path d="M17.5 14.1c-.28-.14-1.66-.8-1.92-.89-.26-.09-.46-.14-.66.14-.21.28-.82.89-1.01 1.07-.18.18-.36.21-.64.07-.28-.14-1.18-.43-2.25-1.39-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.13-.13.28-.36.42-.54.14-.18.19-.31.28-.51.09-.2 0-.37-.05-.51-.05-.14-.66-1.58-.91-2.18-.24-.57-.48-.49-.66-.5-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.29-1.02 1-1.02 2.44 0 1.44 1.05 2.83 1.19 3.03.14.2 2.06 3.3 5.02 4.62 2.96 1.33 2.96.89 3.5.83.54-.06 1.76-.72 2.01-1.41.25-.69.25-1.28.18-1.41-.07-.13-.26-.2-.54-.34z"
@@ -35,7 +35,7 @@
   </p>
 
   <!-- BOTONES SUPERIORES -->
-  <div style="display:flex;gap:12px;justify-content:center;margin-top:14px;">
+  <div style="display:flex;gap:12px;justify-content:center;margin-top:14px;flex-wrap:wrap;">
 
     <!-- WhatsApp directo con mensaje -->
     <a class="btn-whatsapp"
@@ -52,7 +52,18 @@
 
   </div>
 
-  <!-- GALERÍA -->
+  <!-- SISTEMA DE APARTADO -->
+  <div class="apartado-banner">
+    ✔ Sistema de apartado:  
+    • $50 si el monto es $250 o menos  
+    • Desde $255 en adelante: 50% del total  
+    • 15 días para recoger  
+    • No hay cambios ni devoluciones  
+    • El producto debe ser inspeccionado al recibirlo  
+    • Pasados 15 días, no hay reembolso y el artículo vuelve a venta
+  </div>
+
+  <!-- GRID -->
   <div class="grid">
     <!-- Aquí pegas tus estucheras -->
   </div>
@@ -64,7 +75,7 @@
       <strong>Novedades Videth</strong>
 
       <div class="footer-hours">
-        Abierto los 365 días — Horario: 12:30pm a 9:30pm.  
+        Abierto los 365 días — Horario: 12:30pm a 9:30pm.<br>
         En temporada: 9:30am a 11:00pm.
       </div>
 
@@ -96,8 +107,6 @@
     </div>
 
   </footer>
-
-  <script src="../script.js"></script>
 
 </body>
 </html>
