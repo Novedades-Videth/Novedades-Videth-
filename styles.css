@@ -133,4 +133,94 @@ h1, h2, h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: 0.2s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float svg {
+    width: 38px;
+}
+
+/* ---------- Página de producto ---------- */
+.product-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+#productoImagen {
+    border-radius: 18px;
+    border: 2px solid #ffb6ea;
+}
+
+/* ---------- Apartado de Envíos ---------- */
+.envios-apartado {
+    background: #fff6ff;
+    padding: 14px;
+    border-radius: 12px;
+    margin: 20px 0;
+    border: 2px dashed #ff7acb;
+}
+
+.envios-apartado h3 {
+    margin-top: 0;
+    color: #ff4fa3;
+}
+
+/* ---------- Footer kawaii ---------- */
+footer {
+    margin-top: 40px;
+    padding: 25px;
+    background: #ffffffaa;
+    border-top: 3px dashed #ffb2e6;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+}
+
+footer a {
+    color: #ff66c4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Banner Kawaii Universal ---------- */
+.banner-kawaii {
+  background: linear-gradient(90deg, #FFB7EB, #FFD8EF, #FFEAF8);
+  padding: 16px 0;
+  text-align: center;
+  border-bottom: 3px dashed #FF6FCF;
+  margin-bottom: 18px;
+}
+
+.banner-kawaii-content {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ff4fa3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.banner-kawaii .star {
+  font-size: 1.4rem;
+  animation: floatStar 2.2s ease-in-out infinite;
+  color: #ff79c9;
+}
+
+@keyframes floatStar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
