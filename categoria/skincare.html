@@ -1,48 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="manifest" href="manifest.json">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Skincare - Novedades Videth</title>
+
+  <!-- Estilos -->
   <link rel="stylesheet" href="../estilos.css" />
+
+  <!-- Manifest -->
+  <link rel="manifest" href="../manifest.json">
 </head>
-  <!-- Floating WhatsApp (kawaii) -->
-<a class="whatsapp-float" href="https://wa.me/52557145622?text=Hola%20me%20interesa%20este%20producto." target="_blank" aria-label="WhatsApp">
-  <!-- SVG kawaii -->
-  <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20.52 3.48A11.93 11.93 0 0012 .02C6.49.02 1.98 4.53 1.98 10.04c0 1.77.46 3.5 1.35 5.03L.27 23.23l8.63-2.28a10.96 10.96 0 004.83 1.02c5.51 0 10.02-4.51 10.02-10.02 0-2.67-1.04-5.18-2.96-7.47z" fill="#FF6FCF"/>
-    <path d="M17.5 14.1c-.28-.14-1.66-.8-1.92-.89-.26-.09-.46-.14-.66.14-.21.28-.82.89-1.01 1.07-.18.18-.36.21-.64.07-.28-.14-1.18-.43-2.25-1.39-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.13-.13.28-.36.42-.54.14-.18.19-.31.28-.51.09-.2 0-.37-.05-.51-.05-.14-.66-1.58-.91-2.18-.24-.57-.48-.49-.66-.5-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.29-1.02 1-1.02 2.44 0 1.44 1.05 2.83 1.19 3.03.14.2 2.06 3.3 5.02 4.62 2.96 1.33 2.96.89 3.5.83.54-.06 1.76-.72 2.01-1.41.25-.69.25-1.28.18-1.41-.07-.13-.26-.2-.54-.34z" fill="#fff"/>
-  </svg>
-</a>
-<script src="../script.js"></script> <!-- si ruta es distinta ajústala -->
+
 <body>
+
+  <!-- Botón volver -->
   <a class="btn" href="../index.html">⬅ Regresar</a>
+
+  <!-- Título -->
   <h1>Skincare</h1>
-  <p class="tagline" style="text-align:center;color:#666;margin-top:-12px;">Cuidado facial y rutinas</p>
+  <p class="tagline" style="text-align:center;color:#666;margin-top:-12px;">
+    Cuidado facial y rutinas
+  </p>
 
+  <!-- Botones principales -->
   <div style="display:flex;gap:12px;justify-content:center;margin-top:14px;">
-    <a class="btn-whatsapp" href="https://api.whatsapp.com/send?phone=+521XXXXXXXXXX&text=Hola%20quiero%20skincare" target="_blank">WhatsApp</a>
-    <a class="btn-pedido" href="mailto:tu@correo.com?subject=Pedido%20Skincare&body=Hola%2C%20quiero%20hacer%20un%20pedido.">Enviar pedido</a>
+    <a class="btn-whatsapp" 
+       href="https://api.whatsapp.com/send?phone=52557145622&text=Hola%20quiero%20skincare"
+       target="_blank">WhatsApp</a>
+
+    <a class="btn-pedido" 
+       href="mailto:tu@correo.com?subject=Pedido%20Skincare&body=Hola%2C%20quiero%20hacer%20un%20pedido.">
+       Enviar pedido
+    </a>
   </div>
 
+  <!-- GRID productos -->
   <div class="grid">
-    <!-- Pega skincare -->
+    <!-- Aquí pegas las tarjetas de productos -->
   </div>
+
+  <!-- WhatsApp flotante kawaii -->
+  <a class="whatsapp-float" 
+     href="https://wa.me/52557145622?text=Hola%20me%20interesa%20este%20producto."
+     target="_blank" aria-label="WhatsApp">
+
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+      <path d="M20.52 3.48A11.93 11.93 0 0012 .02C6.49.02 1.98 4.53 1.98 10.04c0 1.77.46 3.5 1.35 5.03L.27 23.23l8.63-2.28a10.96 10.96 0 004.83 1.02c5.51 0 10.02-4.51 10.02-10.02 0-2.67-1.04-5.18-2.96-7.47z" fill="#FF6FCF"/>
+      <path d="M17.5 14.1c-.28-.14-1.66-.8-1.92-.89-.26-.09-.46-.14-.66.14-.21.28-.82.89-1.01 1.07-.18.18-.36.21-.64.07-.28-.14-1.18-.43-2.25-1.39-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.13-.13.28-.36.42-.54.14-.18.19-.31.28-.51.09-.2 0-.37-.05-.51-.05-.14-.66-1.58-.91-2.18-.24-.57-.48-.49-.66-.5-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.29-1.02 1-1.02 2.44 0 1.44 1.05 2.83 1.19 3.03.14.2 2.06 3.3 5.02 4.62 2.96 1.33 2.96.89 3.5.83.54-.06 1.76-.72 2.01-1.41.25-.69.25-1.28.18-1.41-.07-.13-.26-.2-.54-.34z" fill="#fff"/>
+    </svg>
+  </a>
+
+  <!-- Script -->
+  <script src="../script.js"></script>
+
+  <!-- FOOTER kawaii -->
+  <footer class="footer-kawaii">
+    <div class="footer-left">
+      <strong>Novedades Videth</strong>
+      <div class="footer-hours">
+        Abierto los 365 días — Horario: 12:30pm a 9:30pm.  
+        En temporada: 9:30am a 11:00pm.
+      </div>
+
+      <div style="margin-top:6px;color:#666;font-size:0.95rem;">
+        Av. Río Soto La Marina 2D, Real del Moral, Iztapalapa, 09010 CDMX<br>
+        <a href="https://maps.app.goo.gl/65as3VQShef14cvb9" 
+           target="_blank" style="color:#ff66c4;text-decoration:none;">
+           Ver ubicación
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/boutiquenovedadesvideth?igsh=Y2kybGw4enl3dXdo" target="_blank">
+        Instagram • @boutiquenovedadesvideth
+      </a>
+
+      <a href="https://www.facebook.com/share/1DH3cqKQVH/" target="_blank">
+        Facebook • @juguetesVideth
+      </a>
+
+      <a href="https://youtube.com/@novedadesvideth?si=Cqs5RsDANIG3EvAj" target="_blank">
+        YouTube • @novedadesvideth
+      </a>
+    </div>
+  </footer>
+
 </body>
 </html>
-<footer class="footer-kawaii">
-  <div class="footer-left">
-    <strong>Novedades Videth</strong>
-    <div class="footer-hours">Abierto los 365 días — Horario: 12:30pm a 9:30pm. En temporada: 9:30am a 11:00pm.</div>
-    <div style="margin-top:6px;color:#666;font-size:0.95rem;">
-      Av. Río Soto La Marina 2D, Real del Moral, Iztapalapa, 09010 CDMX<br>
-      <a href="https://maps.app.goo.gl/65as3VQShef14cvb9" target="_blank" style="color:#ff66c4;text-decoration:none;">Ver ubicación</a>
-    </div>
-  </div>
-  <div class="footer-socials">
-    <a href="https://www.instagram.com/boutiquenovedadesvideth?igsh=Y2kybGw4enl3dXdo" target="_blank">Instagram • @boutiquenovedadesvideth</a>
-    <a href="https://www.facebook.com/share/1DH3cqKQVH/" target="_blank">Facebook • @juguetesVideth</a>
-    <a href="https://youtube.com/@novedadesvideth?si=Cqs5RsDANIG3EvAj" target="_blank">YouTube • @novedadesvideth</a>
-  </div>
-</footer>
