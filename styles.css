@@ -37,7 +37,38 @@ h1, h2, h3 {
     text-shadow: 0 0 10px rgba(255, 102, 196, 0.4);
 }
 
-/* Tarjetas de productos */
+/* ---------- GRID (INDEX Y CATEGORÍAS) ----------- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.producto {
+    background: #ffffffcc;
+    border-radius: 18px;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #4a3556;
+    border: 2px dashed #ffb6ea;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.25);
+    transition: 0.2s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 14px #ffb6ea;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid #ffb6ea;
+}
+
+/* ---------- TARJETAS DE PRODUCTO (CATEGORY) ---------- */
 .product-card {
     background: #ffffffcc;
     border-radius: 18px;
@@ -45,16 +76,21 @@ h1, h2, h3 {
     margin: 15px 0;
     box-shadow: 0 4px 12px rgba(255, 105, 180, 0.25);
     border: 2px dashed #ffb6ea;
+    transition: transform 0.15s, box-shadow 0.2s;
 }
 
-/* Imagen del producto */
+.product-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 12px #ffb6ea;
+}
+
 .product-card img {
     width: 100%;
     border-radius: 15px;
     border: 2px solid #ffb6ea;
 }
 
-/* Botón kawaii rosita */
+/* ------- Botón kawaii -------- */
 .btn-kawaii {
     background: #ff66c4;
     color: white;
@@ -67,19 +103,30 @@ h1, h2, h3 {
     margin-top: 10px;
     display: block;
     width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
 
-/* Botón kawaii hover */
 .btn-kawaii:hover {
     background: #ff2fab;
+    transform: scale(1.05);
 }
 
-/* BOTÓN FLOTANTE WHATSAPP */
+/* Precio */
+.precio {
+    color: #ff3fa8;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 8px;
+}
+
+/* ---------- Botón flotante WhatsApp ---------- */
 .whatsapp-float {
     position: fixed;
     bottom: 22px;
     right: 22px;
-    background: #25D366;
+    background: #ff66c4;
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -88,13 +135,45 @@ h1, h2, h3 {
     justify-content: center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     z-index: 9999;
+    transition: 0.2s;
 }
 
-.whatsapp-float img {
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float svg {
     width: 38px;
 }
 
-/* Footer kawaii */
+/* ---------- Página de producto ---------- */
+.product-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+#productoImagen {
+    border-radius: 18px;
+    border: 2px solid #ffb6ea;
+}
+
+/* ---------- Apartado de Envíos ---------- */
+.envios-apartado {
+    background: #fff6ff;
+    padding: 14px;
+    border-radius: 12px;
+    margin: 20px 0;
+    border: 2px dashed #ff7acb;
+}
+
+.envios-apartado h3 {
+    margin-top: 0;
+    color: #ff4fa3;
+}
+
+/* ---------- Footer kawaii ---------- */
 footer {
     margin-top: 40px;
     padding: 25px;
@@ -103,14 +182,13 @@ footer {
     text-align: center;
     border-radius: 20px 20px 0 0;
 }
-.envios-apartado {
-  background: #fff6ff;
-  padding: 14px;
-  border-radius: 12px;
-  margin: 20px 0;
-  border: 2px dashed #ff7acb;
+
+footer a {
+    color: #ff66c4;
+    text-decoration: none;
+    font-weight: bold;
 }
-.envios-apartado h3 {
-  margin-top: 0;
-  color: #ff4fa3;
+
+footer a:hover {
+    text-decoration: underline;
 }
