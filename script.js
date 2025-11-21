@@ -1,16 +1,14 @@
 /* --------------------------
-  script.js (completo, pegar)
-   - Registra sw.js
-   - Helpers WhatsApp
-   - Auto-bind para botones con data-product
+  script.js (completo, corregido para GitHub Pages)
 ---------------------------*/
 
 const WHATSAPP_NUMBER = "52557145622"; // +52 55 7145 622 -> sin + ni espacios
 const WHATSAPP_BASE_MESSAGE = "Hola me interesa este producto.";
 
-// Registrar service worker (usa sw.js)
+// Registrar service worker (ruta absoluta para GitHub Pages)
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js")
+  navigator.serviceWorker
+    .register("/Novedades-Videth-/sw.js")
     .then(() => console.log("Service Worker registrado"))
     .catch(err => console.log("Error al registrar SW:", err));
 }
@@ -32,8 +30,7 @@ function openWhatsAppWithProduct(productName = "", price = "", img = "") {
   window.open(url, "_blank");
 }
 
-/* Si usas enlaces que llevan a product.html con query params,
-   este helper construye el link para product desde JS si lo necesitas */
+/* Enviar datos por query params */
 function goToProductPage({ nombre, precio, img, desc }) {
   const qp = new URLSearchParams({
     nombre: nombre || "",
@@ -44,9 +41,7 @@ function goToProductPage({ nombre, precio, img, desc }) {
   window.location.href = `../product.html?${qp}`;
 }
 
-/* Auto-bind: añade evento a botones con data-product (no necesitas onclick en cada archivo) 
-   - Usa: <button class="btn-kawaii btn-pedido" data-product="Mochila Azul" data-price="150" data-img="../assets/mochilas/x.jpg">Enviar pedido</button>
-*/
+/* Auto-bind: botones con data-product  */
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".btn-pedido[data-product]").forEach(btn => {
     btn.addEventListener("click", () => {
