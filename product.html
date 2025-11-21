@@ -1,65 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="manifest" href="manifest.json">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Producto - Novedades Videth</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Producto - Novedades Videth</title>
+
+    <!-- Manifest para PWA -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Color barra app instalada -->
+    <meta name="theme-color" content="#ffd1dc" />
 </head>
+
 <body>
-  <div class="container">
-    <a class="btn-kawaii" href="index.html">⬅ Regresar</a>
-    <main>
-      <img id="productoImagen" src="assets/placeholder.png" alt="Producto" style="max-width:420px;width:100%;border-radius:12px;margin-top:12px;">
-      <h2 id="productoNombre"></h2>
-      <p class="precio" id="productoPrecio"></p>
-      <p id="productoDescripcion"></p>
 
-      <div class="product-actions">
-        <button class="btn-kawaii" id="btnEnviar">Enviar pedido</button>
-        <a id="linkWhatsDirect" class="btn-kawaii" href="#" target="_blank">Abrir WhatsApp</a>
-      </div>
+    <div class="container">
 
-      <section style="margin-top:18px;">
-        <h3>Información de envíos</h3>
-        <p>Envíos nacionales: por paquetería (cliente paga). Dentro de CDMX: puedes pagar y contratar Didi/Uber/paquetería local. También ofrecemos sistema de apartado.</p>
-      </section>
-    </main>
+        <a class="btn-kawaii" href="index.html">⬅ Regresar</a>
 
-    <!-- Footer -->
-    <footer>
-      <strong>Novedades Videth</strong><br>
-      Av. Río Soto La Marina 2D, Real del Moral, Iztapalapa, 09010 CDMX<br>
-      Horario: 12:30pm - 9:30pm (Temporada: 9:30am - 11:00pm).<br>
-      <a href="https://maps.app.goo.gl/65as3VQShef14cvb9" target="_blank">Ver en Google Maps</a><br><br>
-      <a href="https://www.instagram.com/boutiquenovedadesvideth?igsh=Y2kybGw4enl3dXdo" target="_blank">Instagram</a> •
-      <a href="https://www.facebook.com/share/1DH3cqKQVH/" target="_blank">Facebook</a> •
-      <a href="https://youtube.com/@novedadesvideth?si=Cqs5RsDANIG3EvAj" target="_blank">YouTube</a>
-    </footer>
-  </div>
+        <main>
+            <!-- Imagen del producto -->
+            <img id="productoImagen" src="assets/placeholder.png" alt="Producto" 
+                 style="max-width:420px;width:100%;border-radius:12px;margin-top:12px;">
 
-  <script src="script.js"></script>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const nombre = params.get("nombre") || "";
-    const precio = params.get("precio") || "";
-    const img = params.get("img") || "";
-    const desc = params.get("desc") || "";
+            <!-- Nombre -->
+            <h2 id="productoNombre"></h2>
 
-    document.getElementById("productoNombre").textContent = decodeURIComponent(nombre);
-    document.getElementById("productoPrecio").textContent = precio ? `$${decodeURIComponent(precio)} MXN` : "";
-    document.getElementById("productoImagen").src = img ? decodeURIComponent(img) : "assets/placeholder.png";
-    document.getElementById("productoDescripcion").textContent = decodeURIComponent(desc || "");
+            <!-- Precio -->
+            <p class="precio" id="productoPrecio"></p>
 
-    // Enlace directo
-    const mensaje = `${WHATSAPP_BASE_MESSAGE} Producto: ${decodeURIComponent(nombre)} ${precio ? "| Precio: $" + decodeURIComponent(precio) : ""}`;
-    document.getElementById("linkWhatsDirect").href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensaje)}`;
+            <!-- Descripción -->
+            <p id="productoDescripcion"></p>
 
-    // Botón que usa helper
-    document.getElementById("btnEnviar").addEventListener("click", () => {
-      openWhatsAppWithProduct(document.getElementById("productoNombre").textContent, document.getElementById("productoPrecio").textContent, document.getElementById("productoImagen").src);
-    });
-  </script>
+            <!-- Acciones -->
+            <div class="product-actions">
+                <button class="btn-kawaii" id="btnEnviar">Enviar pedido</button>
+                <a id="linkWhatsDirect" class="btn-kawaii" href="#" target="_blank">Abrir WhatsApp</a>
+            </div>
+
+            <!-- Información -->
+            <section style="margin-top:18px;">
+                <h3>Información de envíos</h3>
+                <p>
+                    Envíos nacionales por paquetería (cliente paga).  
+                    En CDMX puedes usar Didi/Uber/paquetería local.  
+                    También contamos con sistema de apartado.
+                </p>
+            </section>
+        </main>
+
+        <!-- Footer kawaii (igual al de index) -->
+        <footer class="footer-kawaii">
+            <div class="footer-left">
+                <strong>Novedades Videth</strong>
+                <div class="footer-hours">Abierto los 365 días — Horario: 12:30pm a 9:30pm. En temporada: 9:30am a 11:00pm.</div>
+                <div style="margin-top:6px;color:#666;font-size:0.95rem;">
+                    Av. Río Soto La Marina 2D, Real del Moral, Iztapalapa, 09010 CDMX<br>
+                    <a href="https://maps.app.goo.gl/65as3VQShef14cvb9" target="_blank" style="color:#ff66c4;text-decoration:none;">Ver ubicación</a>
+                </div>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/boutiquenovedadesvideth?igsh=Y2kybGw4enl3dXdo" target="_blank">Instagram • @boutiquenovedadesvideth</a>
+                <a href="https://www.facebook.com/share/1DH3cqKQVH/" target="_blank">Facebook • @juguetesVideth</a>
+                <a href="https://youtube.com/@novedadesvideth?si=Cqs5RsDANIG3EvAj" target="_blank">YouTube • @novedadesvideth</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Script general -->
+    <script src="script.js"></script>
+
+    <!-- Script del producto -->
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        const nombre = params.get("nombre") || "";
+        const precio = params.get("precio") || "";
+        const img = params.get("img") || "";
+        const desc = params.get("desc") || "";
+
+        document.getElementById("productoNombre").textContent = decodeURIComponent(nombre);
+
+        document.getElementById("productoPrecio").textContent =
+            precio ? `$${decodeURIComponent(precio)} MXN` : "";
+
+        document.getElementById("productoImagen").src =
+            img ? decodeURIComponent(img) : "assets/placeholder.png";
+
+        document.getElementById("productoDescripcion").textContent =
+            decodeURIComponent(desc || "");
+
+        // Mensaje estándar para WhatsApp (usa variables del script.js)
+        const mensaje = `${WHATSAPP_BASE_MESSAGE} Producto: ${decodeURIComponent(nombre)} ${precio ? "| Precio: $" + decodeURIComponent(precio) : ""}`;
+
+        document.getElementById("linkWhatsDirect").href =
+            `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensaje)}`;
+
+        document.getElementById("btnEnviar").addEventListener("click", () => {
+            openWhatsAppWithProduct(
+                document.getElementById("productoNombre").textContent,
+                document.getElementById("productoPrecio").textContent,
+                document.getElementById("productoImagen").src
+            );
+        });
+    </script>
+
 </body>
 </html>
