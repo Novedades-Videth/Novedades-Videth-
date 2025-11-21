@@ -1,87 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Maquillaje Profesional - Novedades Videth</title>
-  <link rel="stylesheet" href="../estilos.css" />
-  <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquillaje Profesional | EMay Beauty Shop</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
-
-<!-- WhatsApp flotante kawaii -->
-<a class="whatsapp-float" href="https://wa.me/525571456222?text=Hola%20quiero%20agendar%20maquillaje" target="_blank" aria-label="WhatsApp">
-  <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20.52 3.48A11.93 11.93 0 0012 .02C6.49.02 1.98 4.53 1.98 10.04c0 1.77.46 3.5 1.35 5.03L.27 23.23l8.63-2.28a10.96 10.96 0 004.83 1.02c5.51 0 10.02-4.51 10.02-10.02 0-2.67-1.04-5.18-2.96-7.47z" fill="#FF6FCF"/>
-    <path d="M17.5 14.1c-.28-.14-1.66-.8-1.92-.89-.26-.09-.46-.14-.66.14-.21.28-.82.89-1.01 1.07-.18.18-.36.21-.64.07-.28-.14-1.18-.43-2.25-1.39-.83-.74-1.39-1.66-1.55-1.94-.16-.28-.02-.43.12-.57.13-.13.28-.36.42-.54.14-.18.19-.31.28-.51.09-.2 0-.37-.05-.51-.05-.14-.66-1.58-.91-2.18-.24-.57-.48-.49-.66-.5-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.29-1.02 1-1.02 2.44 0 1.44 1.05 2.83 1.19 3.03.14.2 2.06 3.3 5.02 4.62 2.96 1.33 2.96.89 3.5.83.54-.06 1.76-.72 2.01-1.41.25-.69.25-1.28.18-1.41-.07-.13-.26-.2-.54-.34z" fill="#fff"/>
-  </svg>
-</a>
-
 <body>
-  <a class="btn" href="../index.html">⬅ Regresar</a>
 
-  <h1>Maquillaje Profesional</h1>
-  <p class="tagline" style="text-align:center;color:#666;margin-top:-12px;">
-    Eventos sociales, sesiones y ocasiones especiales
-  </p>
-
-  <!-- Botones principales -->
-  <div style="display:flex;gap:12px;justify-content:center;margin-top:14px;">
-    <a class="btn-whatsapp" href="https://wa.me/525571456222?text=Hola%20quiero%20agendar%20maquillaje" target="_blank">
-      WhatsApp
-    </a>
-
-    <a class="btn-pedido" href="mailto:contacto@novedadesvideth.com?subject=Cotización%20Maquillaje&body=Hola%2C%20quiero%20información%20del%20maquillaje.">
-      Solicitar cotización
-    </a>
+<!-- Banner kawaii -->
+<div class="banner-kawaii">
+  <div class="banner-kawaii-content">
+    <span class="star">✨</span>
+    Servicio de Maquillaje Profesional – Agenda tu cita
+    <span class="star">✨</span>
   </div>
+</div>
 
-  <!-- Información del servicio -->
-  <div class="info-box" style="margin-top:24px;">
-    <h2>💄 Maquillaje Profesional para Eventos y Social</h2>
+<div class="container">
 
-    <p>
-      Servicio premium ideal para bodas, XV años, graduaciones, eventos sociales y sesiones fotográficas.
-      Utilizamos productos profesionales de larga duración y técnicas especializadas.
-    </p>
+    <h1>Maquillaje Profesional</h1>
+    <p>Servicio de maquillaje profesional para eventos y social, con una prueba previa incluida para asegurar tu look perfecto. 💕</p>
 
-    <h3>✨ Este servicio incluye:</h3>
-    <ul>
-      <li>✔ Maquillaje profesional completo (día o noche)</li>
-      <li>✔ Preparación de piel</li>
-      <li>✔ Diseño personalizado según tu estilo</li>
-      <li>✔ Productos profesionales de alta duración</li>
-      <li>🌟 <strong>Prueba de maquillaje previa incluida</strong></li>
-    </ul>
+    <!-- Información del servicio -->
+    <div class="product-card">
+        <img src="maquillaje1.jpg" alt="Maquillaje profesional">
+        <h2>Maquillaje Profesional</h2>
+        <p>
+            Ideal para:  
+            • Eventos especiales  
+            • Sesiones de fotos  
+            • Bodas, XV años, graduaciones y más  
+        </p>
 
-    <h3>📅 Apartado especial para este servicio</h3>
+        <p class="precio">$ — Según cotización</p>
 
-    <div class="apartado-banner">
-      ✔ Para este servicio es necesario agendar cita previa  
-      ✔ Envíanos la siguiente información:  
-      • Día del evento  
-      • Hora en que necesitas el servicio  
-      • Lugar donde se realizará  
-      • Cantidad de personas a maquillar  
-      ✔ Con esto te enviamos la cotización exacta  
-      ✔ Te indicamos el monto requerido para apartar  
+        <div class="product-actions">
+            <a class="btn-kawaii"
+               href="https://wa.me/525571456222?text=Hola%20EMay!%20Quiero%20información%20sobre%20el%20maquillaje%20profesional">
+               Pedir Cotización 💬
+            </a>
+        </div>
     </div>
 
-    <h3>📲 Agenda tu cita</h3>
-    <p>Haz clic para enviarme mensaje por WhatsApp:</p>
+    <!-- Sistema de apartado especial -->
+    <div class="envios-apartado">
+        <h3>💖 Sistema de Apartado para Maquillaje Profesional</h3>
+        <p>
+            Para este servicio es necesario <b>agendar una cita previa</b> con los siguientes datos:  
+            • Día deseado  
+            • Hora aproximada  
+            • Dirección o lugar del evento  
+            • Número de personas que recibirán el servicio  
+        </p>
 
-    <a class="whatsapp-btn" href="https://wa.me/525571456222?text=Hola%20quiero%20agendar%20maquillaje" target="_blank">
-      Agendar Maquillaje
+        <p>
+            💄 Una vez brindada la información, se enviará la cotización completa y el monto requerido para apartar tu fecha.<br>
+            ⭐ Este servicio incluye <b>una prueba de maquillaje previa</b>.
+        </p>
+    </div>
+
+    <!-- WhatsApp flotante -->
+    <a class="whatsapp-float"
+       href="https://wa.me/525571456222?text=Hola%20EMay!%20Vengo%20de%20la%20página%20de%20Maquillaje%20Profesional">
+        <svg viewBox="0 0 32 32" fill="white">
+            <path d="M16 .3C7.2.3.1 7.4.1 16.2c0 2.8.7 5.6 2.1 8.1L0 32l8-2.1c2.4 1.3 5.1 2 7.9 2h.1c8.8 0 15.9-7.2 15.9-16S24.9.3 16 .3zm9.4 22.8c-.4 1-2.2 2-3 2.1-.8.1-1.6.4-5.5-1.2-4.6-1.8-7.5-6.5-7.7-6.8-.2-.3-1.8-2.4-1.8-4.5s1.1-3.2 1.5-3.7c.4-.5.9-.7 1.2-.7h.9c.3 0 .7-.1 1.1.8.4.9 1.3 3.2 1.4 3.4.1.2.1.5 0 .8-.2.4-.3.5-.6.8-.3.3-.5.5-.7.9-.2.3-.5.6-.2 1.1.3.5 1.4 2.3 3 3.8 2.1 1.9 3.9 2.5 4.5 2.8.5.2.8.2 1.1-.1.3-.3 1.3-1.5 1.6-2 .3-.5.7-.4 1.1-.3.5.2 2.8 1.3 3.3 1.5.5.2.8.3.9.5.1.2.1 1.1-.3 2z"/>
+        </svg>
     </a>
 
-    <h3>📦 Información adicional</h3>
-    <ul>
-      <li>🚚 Servicio a domicilio disponible según zona</li>
-      <li>🕒 Revisar disponibilidad antes de apartar</li>
-      <li>💬 Atención personalizada</li>
-    </ul>
-  </div>
+</div>
 
-  <script src="../script.js"></script>
+<footer>
+    <p>EMay Beauty Shop © 2025 • <a href="../index.html">Volver al inicio</a></p>
+</footer>
 
 </body>
 </html>
