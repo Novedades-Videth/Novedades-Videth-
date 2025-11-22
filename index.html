@@ -25,6 +25,21 @@
             font-weight: 600;
         }
 
+        /* Banner Principal */
+        .banner-container {
+            width: 100%;
+            max-width: 1250px;
+            margin: 25px auto 10px auto;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+        }
+
+        .banner-img {
+            width: 100%;
+            display: block;
+        }
+
         .container {
             max-width: 1250px;
             margin: auto;
@@ -90,11 +105,16 @@
 
 <header>EMay Shop — Categorías</header>
 
+<!-- Banner Principal -->
+<div class="banner-container">
+    <img class="banner-img" src="assets/banners/banner-bienvenidos.png" alt="Bienvenidos EMay Shop">
+</div>
+
 <div class="container">
     <div class="grid">
 
         <!-- 26 CATEGORÍAS -->
-        
+
         <a class="card" href="temporada-navidena-2025.html">
             <img src="img/categorias/navidad.jpg" alt="">
             <div class="card-title">Temporada Navideña 2025</div>
