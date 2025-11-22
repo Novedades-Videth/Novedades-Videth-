@@ -224,3 +224,9 @@ footer a:hover {
   50% { transform: translateY(-5px); }
   100% { transform: translateY(0); }
 }
+
+.banner-categorias img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
